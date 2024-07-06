@@ -16,7 +16,7 @@ const Dashboard = async () => {
   } = await getData();
 
   return (
-    <div className="container">
+    <div className="w-full mx-auto px-4 md:px-6">
       <div className="my-10">
         <DataTable columns={columns} data={cryptocurrencies} />
       </div>

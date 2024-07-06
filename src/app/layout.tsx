@@ -23,7 +23,7 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <header>
-          <nav className="nav container">
+          <nav className="max-w-7xl w-full flex items-center justify-between py-4 m-auto px-4 md:px-6">
             <h1 className="text-display-3">KindeAuth</h1>
             <div>
               {!(await isAuthenticated()) ? (
@@ -60,22 +60,8 @@ export default async function RootLayout({
             </div>
           </nav>
         </header>
-        <main>{children}</main>
-        <footer className="footer">
-          <div className="container">
-            <strong className="text-heading-2">KindeAuth</strong>
-            <p className="footer-tagline text-body-3">
-              Visit our{" "}
-              <Link className="link" href="https://kinde.com/docs">
-                help center
-              </Link>
-            </p>
-
-            <small className="text-subtle">
-              © 2023 KindeAuth, Inc. All rights reserved
-            </small>
-          </div>
-        </footer>
+        <main className="max-w-7xl mx-auto">{children}</main>
+        <footer className="footer"></footer>
       </body>
     </html>
   );
