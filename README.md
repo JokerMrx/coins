@@ -1,27 +1,19 @@
-# Kinde Starter Kit - NextJS with full App Router support
-
-This is a starter kit to get you started with Kinde on Next.js
-
 ## Dependancies
 
 - node.js (>=18)
-- Kinde account - Get free account [here](https://app.kinde.com/register)
-  - Kinde back-end web application setup
 
 ## Setup your local environment
 
-1. [Fork](https://github.com/kinde-starter-kits/kinde-nextjs-app-router-starter-kit/fork)
-2. Clone the repository
+1. Clone the repository
 
 ```
-git clone https://github.com/<your_github_username>/kinde-nextjs-app-router-starter-kit.git
+git clone https://github.com/JokerMrx/coins.git
 ```
-
 3. Within the project folder install the dependancies
 
 ```
-> cd kinde-nextjs-app-router-starter-kit
-> npm i
+> cd coins
+> npm i | yarn
 ```
 
 4. Set up your environment
@@ -58,7 +50,7 @@ http://localhost:3000
 ## Start your app
 
 ```
-npm run dev
+npm run dev | yarn dev --port 3000
 ```
 
 open `http://localhost:3000` in your browser
@@ -68,11 +60,3 @@ open `http://localhost:3000` in your browser
 Click on `Sign up` and register your first user for your business!
 
 Within the Kinde Dashboard, you will see your new user listed within the user view. 🚀
-
-# Resources
-- [Kinde Next.js SDK Docs](https://kinde.com/docs/developer-tools/nextjs-sdk/)
-- [Kinde Management API Docs](https://kinde.com/api/docs/#kinde-management-api)
-
-# Get help
-- [Discord](https://discord.gg/wHX6j7wG5d)
-- [Slack](https://join.slack.com/t/thekindecommunity/shared_invite/zt-26hdaavyc-CfOa06vP23guSwK~~OpFMQ)
