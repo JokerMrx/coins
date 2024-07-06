@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container">
       <div className="card hero">
         <p className="text-display-1 hero-title">
-          Let's take a look at <br /> Cryptocurrencies
+          {"Let's"} take a look at <br /> Cryptocurrencies
         </p>
 
         <Link

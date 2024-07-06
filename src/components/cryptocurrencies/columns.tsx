@@ -40,7 +40,7 @@ export const columns: ColumnDef<ICryptocurrency>[] = [
         <div>
           {Object.entries(cryptocurrency.quote).map(([currency, quote]) => {
             return (
-              <p>
+              <p key={currency}>
                 {currency}: {quote.market_cap}
               </p>
             );
@@ -59,7 +59,7 @@ export const columns: ColumnDef<ICryptocurrency>[] = [
         <div>
           {Object.entries(cryptocurrency.quote).map(([currency, quote]) => {
             return (
-              <p>
+              <p key={currency}>
                 {currency}: {quote.market_cap}
               </p>
             );
