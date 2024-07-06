@@ -1,19 +1,27 @@
-import { Button } from "@/components/ui/button";
+import { columns } from "@/components/cryptocurrencies/columns";
+import { DataTable } from "@/components/tables/data-table";
+import { getCryptocurrenciesListingsLatest } from "@/services/api/cryptocurrency.api";
 
-export default function Dashboard() {
+const getData = async () => {
+  const data = await getCryptocurrenciesListingsLatest();
+
+  return {
+    data,
+  };
+};
+
+const Dashboard = async () => {
+  const {
+    data: { data: cryptocurrencies },
+  } = await getData();
+
   return (
     <div className="container">
-      <div className="card start-hero">
-        <p className="text-body-2 start-hero-intro">Woohoo!</p>
-        <p className="text-display-2">
-          Your authentication is all sorted.
-          <br />
-          Build the important stuff.
-        </p>
+      <div className="my-10">
+        <DataTable columns={columns} data={cryptocurrencies} />
       </div>
-      <section className="next-steps-section">
-        <h2 className="text-heading-1">Next steps for you</h2>
-      </section>
     </div>
   );
-}
+};
+
+export default Dashboard;
