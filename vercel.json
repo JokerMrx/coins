@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/dashboard",
-      "destination": "/he/projects/landing_ai"
+      "destination": "/"
     }
   ]
 }
